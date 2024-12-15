@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- Navbar Icons -->
+        <div class="nav-icons">
+            
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search...">
+                <i class="fa fa-search"></i> 
+            </div>
+
+            <div class="user-account">
+                <i class="fa-solid fa-user icon"></i>
+                <span class="tooltip-text">User Account</span>
+            </div>
+            
+            <div class="log-off">
+                <i class="fa-solid fa-right-from-bracket icon"></i>
+                <span class="tooltip-text">Logoff</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="close" id="close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+        <ul class="menu">
+            <li><a href="#1">Option1</a></li>
+            <li><a href="#2">Option2</a></li>
+            <li><a href="#3">Option3</a></li>
+            <li><a href="#4">Option4</a></li>
+            <li><a href="#5">Option5</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <!-- Table Section -->
+    <div class="table-container">
+       
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>C1</th>
+                    <th>C2</th>
+                    <th>C3</th>
+                    <th>C4</th>
+                    <th>C5</th>
+                    <th>C6</th>
+                    <th>C7</th>
+                    <th>C8</th>
+                    <th>C9</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>
+                        <div class="actions">
+                            
+                            <div class="delete">
+                                <i class="fa-solid fa-trash icon-action delete"></i>
+                                <span class="table-tooltip">Delete</span>
+                            </div>
+                            <div class="recycle">
+                                <i class="fa-solid fa-recycle icon-action recycle"></i>
+                                <span class="table-tooltip">Recycle</span>
+                            </div>
+                            <div class="edit">
+                                <i class="fa-solid fa-pen-to-square icon-action edit"></i>
+                                <span class="table-tooltip">Edit</span>
+                            </div>
+
+                        </div>
+                        
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="table.js"></script>
+</body>
+</html>
